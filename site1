@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edward Mãos de Tesoura</title>
+
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+        }
+
+        main {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        img {
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        p {
+            width: 75%;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-position: inside;
+            padding: 0;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Edward Mãos de Tesoura</h1>
+    <p>Um clássico filme de fantasia, romance e drama</p>
+</header>
+
+<main>
+
+    <img src="https://s2.glbimg.com/laTS84FUTWvu5BSfen7nxvJQZAU=/s.glbimg.com/og/rg/f/original/2013/08/13/edward-kim.jpg" alt="Edward Mãos de Tesoura">
+
+    <h2>Sobre o filme</h2>
+    <p>
+        Edward Mãos de Tesoura é um filme de 1990 dirigido por Tim Burton e estrelado por Johnny Depp.
+        A história mistura fantasia e drama para contar a vida de um ser incompleto que tenta se encaixar na sociedade.
+    </p>
+
+    <h2>Sinopse</h2>
+    <p>
+        Edward é uma criação de um inventor que morreu antes de terminar sua obra. Em vez de mãos,
+        ele possui lâminas de tesoura. Ele vive isolado em um castelo até ser descoberto por uma vendedora
+        chamada Peg Boggs. Ela o leva para viver com sua família em uma pequena cidade.
+        Lá, Edward tenta se adaptar à vida normal, fazendo amigos e descobrindo o amor,
+        mas também enfrentando o preconceito das pessoas por ser diferente.
+    </p>
+
+    <h2>Personagens principais</h2>
+    <ul>
+        <li>Edward - Johnny Depp</li>
+        <li>Kim Boggs - Winona Ryder</li>
+        <li>Peg Boggs - Dianne Wiest</li>
+        <li>Bill Boggs - Alan Arkin</li>
+        <li>Joyce Monroe - Kathy Baker</li>
+        <li>Jim - Anthony Michael Hall</li>
+        <li>Inventor - Vincent Price</li>
+    </ul>
+
+    <h2>Curiosidades</h2>
+    <ul>
+        <li>Primeira parceria entre Johnny Depp e Tim Burton.</li>
+        <li>O filme foi inspirado em um desenho feito por Tim Burton quando era adolescente.</li>
+        <li>O personagem Edward quase não fala durante o filme.</li>
+        <li>O visual do personagem foi pensado para parecer frágil e assustador ao mesmo tempo.</li>
+        <li>O filme mistura elementos de conto de fadas com crítica social.</li>
+    </ul>
+
+</main>
+
+<footer>
+    <p>site criado para fins educativos - 2026</p>
+</footer>
+
+</body>
+</html>
