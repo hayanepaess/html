@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Front-End</title>
+
+<style>
+body {
+font-family: Arial, sans-serif;
+text-align: center;
+background-color: #85a4c0;
+margin: 20px;
+}
+
+h1 {
+font-family: Georgia, serif;
+text-align: center;
+color: #05305a;
+text-align: center;
+}
+
+h2 {
+    text-align: center;
+color: #121c75;
+}
+
+p {
+font-family: Verdana, sans-serif;
+}
+
+img {
+display: block;
+margin: auto;
+border-radius: 10px;
+}
+
+ul {
+background-color: #85a4c0;
+text-align: center;
+padding: 6px;
+border-radius: 10px;
+}
+
+table {
+width: 100%;
+border-collapse:collapse;
+text-align: center;
+margin-top: 10px;
+background-color: #dcdcee;
+}
+
+th {
+background-color: #137be3;
+color: #2c2cbd;
+}
+
+th, td {
+background-color: #ffffff;
+border: 1px solid black;
+padding: 10px;
+text-align: center;
+}
+
+tr:nth-child(even) {
+background-color: #dcdcee;
+}
+</style>
+</head>
+
+<body>
+
+<h1> Desenvolvimento Front-end </h1>
+
+<h2> O Front-End é a parte de um site que o usuário vê e utiliza.</h2>
+<h2> Ele é desenvolvido principalmente com HTML, CSS e JavaScript.</h2>
+
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600"
+alt="Programação Front-End"
+width="500">
+
+<h2>Tecnologias Mais Utilizadas</h2>
+
+<ul>
+<li>
+    HTML <br>
+    CSS <br>
+    JavaScript <br>
+    React <br>
+    Bookstrap <br>
+</li>
+</ul>
+
+<h2>Tabela de Tecnologias</h2>
+
+<table>
+<tr>
+<th>Tecnologia</th>
+<th>Função</th>
+</tr>
+
+<tr>
+<td>HTML</td>
+<td>Estrutura da página</td>
+</tr>
+
+<tr>
+<td>CSS</td>
+<td>Estilização</td>
+</tr>
+
+<tr>
+<td>JavaScript</td>
+<td>Interatividade</td>
+</tr>
+
+<tr>
+<td>React</td>
+<td>Criação de interfaces</td>
+</tr>
+</table>
+
+<h2> Nossos Projetos. </h2>
+<a href="https://github.com/hayanepaess/html/blob/23f3282aa220865aca0a98aeff48283a8d904864/aula1.html"> Projeto - Primeiro Site </a> <br>
+<a href="https://github.com/hayanepaess/html/blob/23f3282aa220865aca0a98aeff48283a8d904864/lista1.html"> Projeto - Listas </a> <br>
+<a href="https://github.com/hayanepaess/html/blob/23f3282aa220865aca0a98aeff48283a8d904864/tabela1.html"> Projeto - Tabela </a>
+
+<p> Grupo: Hayane <br>
+    Thiego <br>
+    Guilherme <br>
+    Luiz Tiago <br>
+    Luana <br>
+    Isabella </p>
+</body>
+</html>
