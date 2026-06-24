@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupos Copa 2026</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            margin: 0;
+        }
+
+        header {
+            background-color: #1f3b57;
+            color: white;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 900px;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th {
+            background-color: #1f3b57;
+            color: white;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f0f0f0;
+        }
+
+        footer {
+            background-color: #1f3b57;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Grupos da Copa do Mundo 2026</h1>
+</header>
+
+<main>
+
+<table>
+    <tr>
+        <th>Grupo A</th>
+        <th>Grupo B</th>
+        <th>Grupo C</th>
+        <th>Grupo D</th>
+    </tr>
+    <tr>
+        <td>México</td>
+        <td>Canadá</td>
+        <td>Brasil</td>
+        <td>EUA</td>
+    </tr>
+    <tr>
+        <td>África do Sul</td>
+        <td>Bósnia</td>
+        <td>Marrocos</td>
+        <td>Paraguai</td>
+    </tr>
+    <tr>
+        <td>Coreia do Sul</td>
+        <td>Qatar</td>
+        <td>Haiti</td>
+        <td>Austrália</td>
+    </tr>
+    <tr>
+        <td>Rep. Tcheca</td>
+        <td>Suíça</td>
+        <td>Escócia</td>
+        <td>Turquia</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>Grupo E</th>
+        <th>Grupo F</th>
+        <th>Grupo G</th>
+        <th>Grupo H</th>
+    </tr>
+    <tr>
+        <td>Alemanha</td>
+        <td>Holanda</td>
+        <td>Bélgica</td>
+        <td>Espanha</td>
+    </tr>
+    <tr>
+        <td>Curaçao</td>
+        <td>Japão</td>
+        <td>Egito</td>
+        <td>Cabo Verde</td>
+    </tr>
+    <tr>
+        <td>Costa do Marfim</td>
+        <td>Suécia</td>
+        <td>Irã</td>
+        <td>Arábia Saudita</td>
+    </tr>
+    <tr>
+        <td>Equador</td>
+        <td>Tunísia</td>
+        <td>Nova Zelândia</td>
+        <td>Uruguai</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>Grupo I</th>
+        <th>Grupo J</th>
+        <th>Grupo K</th>
+        <th>Grupo L</th>
+    </tr>
+    <tr>
+        <td>França</td>
+        <td>Argentina</td>
+        <td>Portugal</td>
+        <td>Inglaterra</td>
+    </tr>
+    <tr>
+        <td>Senegal</td>
+        <td>Argélia</td>
+        <td>RD Congo</td>
+        <td>Croácia</td>
+    </tr>
+    <tr>
+        <td>Iraque</td>
+        <td>Áustria</td>
+        <td>Uzbequistão</td>
+        <td>Gana</td>
+    </tr>
+    <tr>
+        <td>Noruega</td>
+        <td>Jordânia</td>
+        <td>Colômbia</td>
+        <td>Panamá</td>
+    </tr>
+</table>
+
+</main>
+
+<footer>
+    <p> Site criado para fins educativos - 2026</p>
+</footer>
+
+</body>
+</html>
