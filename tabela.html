@@ -2,48 +2,249 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>tabela</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copa 2026 e Objetivos</title>
+
     <style>
-        body{text-align: center;}
-        table{text-align: center;}
+        /* Estilos Gerais (Baseados no seu código da Copa) */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            margin: 0;
+            padding-bottom: 60px; /* Espaço para o footer fixo não cobrir o conteúdo */
+        }
+
+        header {
+            background-color: #1f3b57;
+            color: white;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        /* --- Estilização das Listas (AGORA VERDE POR DENTRO) --- */
+        .secao-listas {
+            background-color: #e8f5e9; /* Fundo verde claro */
+            border: 2px solid #2e7d32; /* Borda verde escura */
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 900px;
+            width: 80%;
+            border-radius: 10px;
+            text-align: left; /* Alinha o texto das listas à esquerda */
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .secao-listas h2, .secao-listas h3 {
+            font-size: 25px;
+            color: #1b5e20; /* Texto dos títulos em verde escuro */
+            text-shadow: 3px 3px 3px #a5d6a7; /* Sombra sutil esverdeada */
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #000;  
+            margin-left: 5px;
+        }
+
+        .secao-listas ol, .secao-listas ul {
+            color: #2e7d32; /* Cor dos itens da lista em verde */
+            line-height: 1.6;
+        }
+
+        /* --- Estilização das Tabelas (COR ORIGINAL DO SEU CÓDIGO) --- */
+        table {
+            margin: 30px auto;
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 900px;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+        }
+
+        th {
+            background-color: #1f3b57; /* Azul original */
+            color: white;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        td {
+            border: 1px solid #ddd; /* Borda original */
+            padding: 10px;
+        }
+
+        /* Linhas alternadas originais */
+        tr:nth-child(even) {
+            background-color: #f0f0f0; 
+        }
+
+        footer {
+            background-color: #1f3b57;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
-<body>
-<h1> Tabela 1 </h1>
-    <table border="1" cellspacing="0" cellpadding="5">
-        <tr>
-            <td colspan="2" bgcolor="#FFFF00" align="center"><b>Vendas março 2010</b></td>
-        </tr>
-        <tr bgcolor="#99CCFF">
-            <td><b>Carro</b></td>
-            <td><b>Unidades</b></td>
-        </tr>
-        <tr>
-            <td>Gol</td>
-            <td>250.000</td>
-        </tr>
-        <tr>
-            <td>Uno</td>
-            <td>123.000</td>
-        </tr>
 
+<body>
+
+<header>
+    <h1>Grupos da Copa do Mundo 2026 & Objetivos</h1>
+</header>
+
+<main>
+
+    <section class="secao-listas">
+        <h2>Objetivos!</h2>
+        <h3>Listas Ordenadas e Não Ordenadas!</h3>
+
+        <ol>
+            <li>Encontrar um trabalho</li>
+            <li>Fazer muito dinheiro</li>
+            <li>Mudar para outra cidade</li>
+            <li>Viajar muito</li>
+            <li>Viver feliz!</li>
+        </ol>
+        <ol start="19">
+            <li>Encontrar um trabalho</li>
+            <li>Fazer muito dinheiro</li>
+        </ol>
+        <ol type="a">
+            <li>Encontrar um trabalho</li>
+            <li>Fazer muito dinheiro</li>
+            <li>Mudar para outra cidade</li>
+        </ol>
+        <ul>
+            <li>Encontrar um trabalho</li>
+            <li>Fazer muito dinheiro</li>
+            <li>Mudar para outra cidade</li>
+        </ul>
+        <ul type="square">
+            <li>Encontrar um trabalho</li>
+            <li>Fazer muito dinheiro</li>
+            <li>Mudar para outra cidade</li>
+        </ul>
+        <ul type="circle">
+            <li>Encontrar um trabalho</li>
+            <li>Fazer muito dinheiro</li>
+            <li>Mudar para outra cidade</li>
+        </ul>
+    </section>
+
+    <table>
         <tr>
-            <td colspan="2" bgcolor="#FFFF00" align="center"><b>Vendas fev. 2010</b></td>
-        </tr>
-        <tr bgcolor="#99CCFF">
-            <td><b>Carro</b></td>
-            <td><b>Unidades</b></td>
-        </tr>
-        <tr>
-            <td>Gol</td>
-            <td>250.000</td>
+            <th>Grupo A</th>
+            <th>Grupo B</th>
+            <th>Grupo C</th>
+            <th>Grupo D</th>
         </tr>
         <tr>
-            <td>Uno</td>
-            <td>123.000</td>
+            <td>México</td>
+            <td>Canadá</td>
+            <td>Brasil</td>
+            <td>EUA</td>
+        </tr>
+        <tr>
+            <td>África do Sul</td>
+            <td>Bósnia</td>
+            <td>Marrocos</td>
+            <td>Paraguai</td>
+        </tr>
+        <tr>
+            <td>Coreia do Sul</td>
+            <td>Qatar</td>
+            <td>Haiti</td>
+            <td>Austrália</td>
+        </tr>
+        <tr>
+            <td>Rep. Tcheca</td>
+            <td>Suíça</td>
+            <td>Escócia</td>
+            <td>Turquia</td>
         </tr>
     </table>
-<hr> 
-<H1> Tabela 2 </H1>
+
+    <table>
+        <tr>
+            <th>Grupo E</th>
+            <th>Grupo F</th>
+            <th>Grupo G</th>
+            <th>Grupo H</th>
+        </tr>
+        <tr>
+            <td>Alemanha</td>
+            <td>Holanda</td>
+            <td>Bélgica</td>
+            <td>Espanha</td>
+        </tr>
+        <tr>
+            <td>Curaçao</td>
+            <td>Japão</td>
+            <td>Egito</td>
+            <td>Cabo Verde</td>
+        </tr>
+        <tr>
+            <td>Costa do Marfim</td>
+            <td>Suécia</td>
+            <td>Irã</td>
+            <td>Arábia Saudita</td>
+        </tr>
+        <tr>
+            <td>Equador</td>
+            <td>Tunísia</td>
+            <td>Nova Zelândia</td>
+            <td>Uruguai</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Grupo I</th>
+            <th>Grupo J</th>
+            <th>Grupo K</th>
+            <th>Grupo L</th>
+        </tr>
+        <tr>
+            <td>França</td>
+            <td>Argentina</td>
+            <td>Portugal</td>
+            <td>Inglaterra</td>
+        </tr>
+        <tr>
+            <td>Senegal</td>
+            <td>Argélia</td>
+            <td>RD Congo</td>
+            <td>Croácia</td>
+        </tr>
+        <tr>
+            <td>Iraque</td>
+            <td>Áustria</td>
+            <td>Uzbequistão</td>
+            <td>Gana</td>
+        </tr>
+        <tr>
+            <td>Noruega</td>
+            <td>Jordânia</td>
+            <td>Colômbia</td>
+            <td>Panamá</td>
+        </tr>
+    </table>
+
+</main>
+
+<footer>
+    <p>Site criado para fins educativos - 2026</p>
+</footer>
+
 </body>
 </html>
