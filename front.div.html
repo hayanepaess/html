@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Calculadora de IMC</title>
+
+<style>
+body {
+font-family: Arial, sans-serif;
+background: linear-gradient(135deg, #f8e8ff, #e6ddff);
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+margin: 0;
+}
+
+.container {
+background-color: white;
+padding: 40px;
+border-radius: 25px;
+text-align: center;
+width: 350px;
+box-shadow: 0 8px 25px rgba(120, 80, 150, 0.2);
+}
+
+h1 {
+color: #9364b5;
+font-size: 30px;
+margin-bottom: 15px;
+}
+
+p {
+color: #777;
+font-size: 17px;
+}
+
+label {
+display: block;
+color: #76528e;
+font-size: 19px;
+margin-top: 20px;
+margin-bottom: 8px;
+}
+
+input {
+width: 90%;
+padding: 13px;
+font-size: 18px;
+border: 2px solid #dfc5ee;
+border-radius: 12px;
+outline: none;
+text-align: center;
+}
+
+input:focus {
+border-color: #ad7bd0;
+}
+
+button {
+background-color: #ad7bd0;
+color: white;
+border: none;
+padding: 15px 25px;
+font-size: 18px;
+border-radius: 12px;
+margin-top: 25px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #9160b5;
+}
+
+#resultadoIMC {
+color: #8253a3;
+font-size: 23px;
+font-weight: bold;
+margin-top: 25px;
+}
+</style>
+
+<script>
+function calcularIMC() {
+var altura = document.getElementById("altura").value;
+var peso = document.getElementById("peso").value;
+
+if (altura <= 0 || peso <= 0) {
+document.getElementById("resultadoIMC").innerHTML =
+"Digite valores válidos!";
+return;
+}
+
+altura = altura / 100;
+
+var imc = (peso / (altura * altura)).toFixed(2);
+
+document.getElementById("resultadoIMC").innerHTML =
+"Seu IMC é: " + imc;
+}
+</script>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Calculadora de IMC</h1>
+
+<p>Descubra seu Índice de Massa Corporal</p>
+
+<label for="altura">Altura (cm)</label>
+<input id="altura" type="number" placeholder="Ex: 165">
+
+<label for="peso">Peso (kg)</label>
+<input id="peso" type="number" placeholder="Ex: 60">
+
+<button onclick="calcularIMC()">
+Calcular IMC
+</button>
+
+<div id="resultadoIMC"></div>
+
+</div>
+
+</body>
+</html>
+
