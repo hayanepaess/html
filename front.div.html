@@ -13,21 +13,22 @@ justify-content: center;
 align-items: center;
 min-height: 100vh;
 margin: 0;
+padding: 30px 10px;
 }
 
 .container {
-background-color: white;
-padding: 40px;
+background: white;
+padding: 35px;
 border-radius: 25px;
 text-align: center;
-width: 350px;
-box-shadow: 0 8px 25px rgba(120, 80, 150, 0.2);
+width: 450px;
+max-width: 90%;
+box-shadow: 0 8px 25px #b99acb55;
 }
 
 h1 {
 color: #9364b5;
 font-size: 30px;
-margin-bottom: 15px;
 }
 
 p {
@@ -40,28 +41,23 @@ display: block;
 color: #76528e;
 font-size: 19px;
 margin-top: 20px;
-margin-bottom: 8px;
 }
 
 input {
-width: 90%;
+width: 85%;
 padding: 13px;
 font-size: 18px;
 border: 2px solid #dfc5ee;
 border-radius: 12px;
-outline: none;
 text-align: center;
-}
-
-input:focus {
-border-color: #ad7bd0;
+margin-top: 10px;
 }
 
 button {
-background-color: #ad7bd0;
+background: #ad7bd0;
 color: white;
 border: none;
-padding: 15px 25px;
+padding: 15px 30px;
 font-size: 18px;
 border-radius: 12px;
 margin-top: 25px;
@@ -69,34 +65,93 @@ cursor: pointer;
 }
 
 button:hover {
-background-color: #9160b5;
+background: #9160b5;
 }
 
 #resultadoIMC {
-color: #8253a3;
-font-size: 23px;
-font-weight: bold;
+background: #f7edfc;
+padding: 18px;
+border-radius: 15px;
 margin-top: 25px;
+color: #8253a3;
+font-size: 20px;
+line-height: 1.6;
+}
+
+h2 {
+color: #9364b5;
+font-size: 23px;
+margin-top: 30px;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 15px;
+font-size: 15px;
+}
+
+th {
+background: #ad7bd0;
+color: white;
+padding: 12px 5px;
+}
+
+td {
+padding: 12px 5px;
+border-bottom: 1px solid #eadcf2;
+color: #684b7c;
+}
+
+tr:nth-child(even) {
+background: #f8f0fc;
+}
+
+.aviso {
+font-size: 13px;
+color: #888;
+margin-top: 20px;
 }
 </style>
 
 <script>
 function calcularIMC() {
-var altura = document.getElementById("altura").value;
-var peso = document.getElementById("peso").value;
+
+var altura = Number(document.getElementById("altura").value);
+var peso = Number(document.getElementById("peso").value);
 
 if (altura <= 0 || peso <= 0) {
 document.getElementById("resultadoIMC").innerHTML =
-"Digite valores válidos!";
+"Por favor, informe sua altura e seu peso corretamente.";
 return;
 }
 
 altura = altura / 100;
 
-var imc = (peso / (altura * altura)).toFixed(2);
+var imc = peso / (altura * altura);
+imc = imc.toFixed(2);
+
+var mensagem = "";
+
+if (imc < 18.5) {
+mensagem = "Seu resultado está abaixo da faixa de referência da tabela.";
+}
+else if (imc < 25) {
+mensagem = "Seu resultado está na faixa de referência considerada saudável na tabela.";
+}
+else if (imc < 30) {
+mensagem = "Seu resultado está na faixa classificada como sobrepeso.";
+}
+else if (imc < 40) {
+mensagem = "Seu resultado está na faixa classificada como obesidade.";
+}
+else {
+mensagem = "Seu resultado está na faixa de obesidade de maior classificação da tabela.";
+}
 
 document.getElementById("resultadoIMC").innerHTML =
-"Seu IMC é: " + imc;
+"<strong>Seu IMC é: " + imc + "</strong><br><br>" +
+mensagem;
 }
 </script>
 </head>
@@ -115,14 +170,55 @@ document.getElementById("resultadoIMC").innerHTML =
 <label for="peso">Peso (kg)</label>
 <input id="peso" type="number" placeholder="Ex: 60">
 
+<br>
+
 <button onclick="calcularIMC()">
 Calcular IMC
 </button>
 
-<div id="resultadoIMC"></div>
+<div id="resultadoIMC">
+Seu resultado aparecerá aqui!
+</div>
+
+<h2>Tabela de classificação do IMC</h2>
+
+<table>
+<tr>
+<th>IMC</th>
+<th>Classificação</th>
+</tr>
+
+<tr>
+<td>Abaixo de 18,5</td>
+<td>Abaixo do peso</td>
+</tr>
+
+<tr>
+<td>18,5 a 24,9</td>
+<td>Saudável</td>
+</tr>
+
+<tr>
+<td>25 a 29,9</td>
+<td>Sobrepeso</td>
+</tr>
+
+<tr>
+<td>30 a 39,9</td>
+<td>Obesidade</td>
+</tr>
+
+<tr>
+<td>40 ou mais</td>
+<td>Obesidade de maior classificação</td>
+</tr>
+</table>
+
+<p class="aviso">
+O IMC é apenas um indicador e não avalia sozinho a saúde de uma pessoa.
+</p>
 
 </div>
 
 </body>
 </html>
-
